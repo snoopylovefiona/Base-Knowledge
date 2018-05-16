@@ -85,6 +85,7 @@ public class BinaryTree {
 				stack.push(node);
 				node = node.getLeft();
 			} else {
+				// 当该节点为叶子节点时，弹栈
 				node = stack.pop();
 				node = node.getRight();
 			}
@@ -113,6 +114,7 @@ public class BinaryTree {
 		Stack<Node> stack = new Stack<>();
 		Node node = root;
 		while (true) {
+			// 左子树压栈
 			while (node != null) {
 				stack.push(node);
 				node = node.getLeft();
@@ -122,6 +124,7 @@ public class BinaryTree {
 			}
 			node = stack.pop();
 			System.out.print(node.getData() + "  ");
+			// 右子树压栈
 			node = node.getRight();
 		}
 	}
