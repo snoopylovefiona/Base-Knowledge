@@ -1,11 +1,19 @@
 package com.snoopy.demo;
 
-public class HelloGit {
+/**
+ * 
+ * 类名称：TypeForcedConversion.java <br>
+ * 内容摘要： //类型强制转换原理。<br>
+ * 修改备注： <br>
+ * 创建时间： 2018年5月24日上午10:19:58<br>
+ * 
+ * @author Snoopy.Li<br>
+ */
+public class TypeForcedConversion {
 
 	// 类型强制转换原理
 
 	public static void main(String[] args) {
-
 
 		System.out.println("long:" + Long.MAX_VALUE);
 
@@ -18,7 +26,7 @@ public class HelloGit {
 		binaryToDecimalLong(2147483647L);
 
 		System.out.println(Long.toBinaryString(2147483647L));
-		
+
 		/**
 		 * 
 		 * 2147483648 Long类型的的二进制表示：
@@ -50,8 +58,7 @@ public class HelloGit {
 
 		// 二进制转十进制
 		Integer.valueOf("0101", 2).toString();
-		
-		
+
 		Long.toBinaryString(2147483647L);
 
 	}

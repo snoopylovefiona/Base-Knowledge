@@ -30,7 +30,6 @@ public class MethodThree {
 		final String[] inputArr = Helper.buildNoArr(52);
 		return new Runnable() {
 			private String[] arr = inputArr;
-
 			public void run() {
 				for (int i = 0; i < arr.length; i = i + 2) {
 					while (threadToGo.value == 2) {

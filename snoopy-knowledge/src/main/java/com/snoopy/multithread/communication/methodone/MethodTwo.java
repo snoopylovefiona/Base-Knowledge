@@ -30,6 +30,7 @@ public class MethodTwo {
 					try {
 						lock.lock();
 						while (threadToGo.value == 2) {
+							// 等待
 							condition.await();
 						}
 						Helper.print(arr[i], arr[i + 1]);
